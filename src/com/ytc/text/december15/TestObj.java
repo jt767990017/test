@@ -17,7 +17,7 @@ public class TestObj {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                if (arr[i][j].contains("男")) {
+                if (arr[i][j].contains("男") && Integer.parseInt(arr[i][1]) > 17) {
                     System.out.println(Arrays.toString(arr[i]));
                 }
             }
@@ -67,19 +67,19 @@ public class TestObj {
         int a = 10;
         int b = 20;
 
-        int c = a++>10&&--b<20?a:b;
+        int c = a++ > 10 && --b < 20 ? a : b;
 
         System.out.println(c);
         System.out.println(b);
 
         int count = 10;
-        while(true){
+        while (true) {
             System.out.println("$");
             count -= 2;
-            if (count==0)break;
+            if (count == 0) break;
         }
 
-        System.out.println(new Random().nextInt(8)+3);
+        System.out.println(new Random().nextInt(8) + 3);
         System.out.println("______________________________");
         int value = getValue(2);
         System.out.println(value);
@@ -101,9 +101,9 @@ public class TestObj {
     }
 }
 
-class A{
+class A {
     String str = new String("good");
-    char[] ch = { 'a', 'b', 'c' };
+    char[] ch = {'a', 'b', 'c'};
 
     public void change(String str, char ch[]) {
         str = "test ok";
