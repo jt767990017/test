@@ -9,7 +9,7 @@ public class ParentMethod extends ObjectMethod {
     public void getParent() {
         int[] array = {-11, -17, 55, 26, 12, 63};
 
-        //冒泡排序
+        //冒泡排序Test
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
                 if (array[j] > array[j + 1]) {
