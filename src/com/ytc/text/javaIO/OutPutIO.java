@@ -247,4 +247,34 @@ public class OutPutIO {
         integers.sort((start, end) -> -start.compareTo(end));
         integers.forEach(n -> System.out.print(n + " "));
     }
+
+
+    @Test
+    public void y() {
+//        boolean b = 5 % 3 == 1 ? false : true;
+//        String s = "abc";
+//        Date date = new Date();
+//        System.out.println(date);
+//        int i = 1 / 2 * 9;
+//        System.out.println(i);
+
+        int a = 10;
+        int b = 20;
+        if (a++ > 10 || --b < 20) {
+            a += 10;
+            b += 20;
+        }
+        System.out.println(a + "," + b);
+
+        int count = 10;
+        while (true) {
+            System.out.println("$");
+            count--;
+            if (count == 5) break;
+        }
+
+        for (int i = 1; i <= 10; i += 2) {
+            System.out.println(i);
+        }
+    }
 }
